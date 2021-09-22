@@ -39,3 +39,5 @@ yarn add react-hook-form yup @hookform/resolvers@2.8.0
 
 yarn add uuid
 yarn add @types/uuid --dev
+
+yarn add @reduxjs/toolkit react-redux redux-persist normalizr
