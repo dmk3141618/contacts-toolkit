@@ -12,6 +12,7 @@ import {
   REGISTER,
 } from 'redux-persist';
 import contactsReducer from '~/common/state/contacts';
+import counterReducer from '~/common/state/counter';
 
 const contactsPersistConfig = {
   key: 'contacts',
@@ -20,6 +21,7 @@ const contactsPersistConfig = {
 
 const rootReducer = combineReducers({
   contacts: persistReducer(contactsPersistConfig, contactsReducer),
+  counter: counterReducer,
 });
 
 export const store = configureStore({

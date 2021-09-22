@@ -43,6 +43,11 @@ function Header() {
           </HeaderNavItem>
         </HeaderNavLi>
         <HeaderNavLi>
+          <HeaderNavItem exact={true} to="/CounterPage">
+            CounterPage
+          </HeaderNavItem>
+        </HeaderNavLi>
+        <HeaderNavLi>
           <HeaderNavItem exact={true} to="/PreviewComponentsPage">
             PreviewComponentsPage
           </HeaderNavItem>

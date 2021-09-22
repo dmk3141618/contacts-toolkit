@@ -6,6 +6,7 @@ import {theme} from '~/common/theme';
 import Header from '~/common/component/Header';
 import Footer from '~/common/component/Footer';
 import ContactsPage from '~/pages/ContactsPage';
+import CounterPage from '~/pages/CounterPage';
 import PreviewComponentsPage from '~/pages/PreviewComponentsPage';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/ContactsPage" component={ContactsPage} />
+        <Route path="/CounterPage" component={CounterPage} />
         <Route path="/PreviewComponentsPage" component={PreviewComponentsPage} />
         <Redirect to="/ContactsPage" />
       </Switch>
