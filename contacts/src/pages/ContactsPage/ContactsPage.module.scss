@@ -7,10 +7,10 @@
   align-items: center;
   padding: 1.0rem;
   min-height: 40.0rem;
+  min-width: 420px;
 }
 
 .appBlock {
-  margin: 0 auto;
   margin-top: 4rem;
   border: 1px solid black;
   padding: 1rem;
@@ -102,13 +102,6 @@
   }
 }
 
-.addFormWrap {
-  border: #fecc2f 1px solid;
-  .addForm {
-
-  }
-}
-
 .listWrap {
   width: 100%;
   .list {
@@ -166,6 +159,48 @@
             margin-left: 0.5rem;
           }
         }
+      }
+    }
+  }
+  .emptyWrap {
+    width: 100%;
+    padding: 2rem;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .emptyTitle {
+      font-size: 2.5rem;
+      color: map-get($color, grayDark);
+    }
+    .emptyText {
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: map-get($color, grayLight);
+    }
+  }
+}
+
+.contactFormWrap {
+  .contactForm {
+    padding: 1rem;
+    .field {
+      padding: 1rem;
+      label {
+        display: block;
+        color: map-get($color, grayBase)
+      }
+      input {
+        display: block;
+        padding: 7px 10px;
+        width: 100%;
+        max-width: 700px;
+        margin-top: 5px;
+      }
+      .error {
+        color: map-get($color, error);
+        margin-top: 5px;
       }
     }
   }
