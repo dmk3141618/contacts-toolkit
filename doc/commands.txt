@@ -1,3 +1,7 @@
 npx create-react-app contacts --template typescript
 
 yarn add node-sass@5.0.0
+
+yarn add @craco/craco
+yarn add craco-alias --dev
+yarn add babel-plugin-root-import --dev
