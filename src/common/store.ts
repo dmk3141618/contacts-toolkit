@@ -11,6 +11,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
+import logger from 'redux-logger';
 import contactsReducer from '~/common/state/contacts';
 import counterReducer from '~/common/state/counter';
 
@@ -31,7 +32,7 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }),
+    }).concat(logger),
   devTools: process.env.NODE_ENV !== 'production',
 });
 

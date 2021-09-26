@@ -42,3 +42,6 @@ yarn add @types/uuid --dev
 
 yarn add @reduxjs/toolkit react-redux redux-persist normalizr
 yarn add --dev @types/react-redux
+
+yarn add redux-logger
+yarn add @types/redux-logger --dev
